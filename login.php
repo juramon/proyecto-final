@@ -1,3 +1,7 @@
+<?php
+  require_once("conexion.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,7 +52,7 @@
       <div class="container">
         <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
 
-          <form class="col s12" method="post">
+          <form class="col s12" method="post" name="formlogin" action="validarlogin.php">
             <div class='row'>
               <div class='col s12'>
               </div>
@@ -67,11 +71,11 @@
                 <label for='password'>Ingrese su contraseña</label>
               </div>
               <label style='float: right;'>
-                                <a class='pink-text' href='#!'><b>Olvidó su contraseña?</b></a>
                             </label>
             </div>
 
             <br />
+
             <center>
               <div class='row'>
                 <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Ingresar</button>
@@ -80,7 +84,7 @@
           </form>
         </div>
       </div>
-      <a href="registrarse.html">Registrarse</a>
+      <a href="registrarse.php">Registrarse</a>
     </center>
 
     <div class="section"></div>

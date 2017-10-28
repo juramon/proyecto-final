@@ -1,3 +1,7 @@
+<?php
+	require_once("conexion.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,12 +19,12 @@
 	<nav class="light-blue lighten-1" role="navigation">
 	<div class="nav-wrapper container">
 		<ul class="right hide-on-med-and-down">
-			<li><a href="registrarse.html" >Registrarse<i class="material-icons right">create</i></a></li>
-			<li><a href="login.html" >Ingresar<i class="material-icons right">lock_outline</i></a></li>
+			<li><a href="registrarse.php" >Registrarse<i class="material-icons right">create</i></a></li>
+			<li><a href="login.php" >Ingresar<i class="material-icons right">lock_outline</i></a></li>
 		</ul>
 		<ul id="nav-mobile" class="side-nav">
-			<li><a href="login.html">Ingresar</a></li>
-			<li><a href="registrarse.html">Registrarse</a></li>
+			<li><a href="login.php">Ingresar</a></li>
+			<li><a href="registrarse.php">Registrarse</a></li>
 		</ul>
 		<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 	</div>
@@ -31,7 +35,7 @@
 	
 	<div class="container">
 		<div class="row">
-			<div class="col s6 offset-s4"><img src="images/logo1.png" width="350px"/></div>
+			<div class="col s6 offset-s4"><img id="logohome" src="images/logo1.png" width="350px"/></div>
 		</div>
 	</div>
 
